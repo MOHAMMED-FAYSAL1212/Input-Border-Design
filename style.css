@@ -1,0 +1,475 @@
+/*Input1*/
+.form-control.input1{
+    transition: .2s;
+}
+.input1:focus{
+    box-shadow: none !important;
+}
+.input1:focus{
+    border-top: 1px solid blue;
+    border-left: 1px solid blue;
+    border-right: 1px solid blue;
+    border-bottom: 5px solid blue;
+}
+
+
+/*input2*/
+.form-control.input2{
+    transition: .2s;
+}
+.input2:focus{
+    box-shadow: none !important;
+}
+.input22{
+    height: 58px;
+    background: #183153;
+    border-radius: 8px;
+    border: 2px solid #183153;
+}
+
+/*Input3*/
+.input33{
+    position: relative;
+}
+.form-control.input3{
+    transition: .4s;
+}
+.input3:focus{
+    box-shadow: none !important;
+}
+.input3{
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+}
+
+/*Brother/sibling ke select korar jonno ~ use kora hoi.*/
+.input3 ~ .focus-border{ 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px !important;
+    background-color: #3399FF;
+    transition: .4s;
+}
+
+.input3:focus ~ .focus-border{
+    width: 100%;
+    transition: .4s;
+}
+
+
+/*Input Reverse 3*/
+.input3re{
+    position: relative;
+}
+.form-control.inputReverse3{
+    transition: .2s;
+}
+.inputReverse3{
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+}
+.inputReverse3:focus{
+    box-shadow: none !important;
+}
+
+/*Brother/sibling ke select korar jonno ~ use kora hoi.*/
+.inputReverse3 ~ .focus-border{ 
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px !important;
+    background-color: #3399FF;
+    transition: .4s;
+}
+
+.inputReverse3:focus ~ .focus-border{
+    width: 100%;
+    transition: .4s;
+}
+
+
+
+/*Input4*/
+.input44{
+    position: relative;
+}
+.form-control.input4{
+    transition: .2s;
+}
+.input4:focus{
+    box-shadow: none !important;
+}
+.input4{
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+}
+.input4 ~ .focus-border{ 
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px !important;
+    background-color: #3399FF;
+    transition: .4s;
+}
+.input4:focus ~ .focus-border{
+    width: 100%;
+    transition: .4s;
+    left: 0;
+}
+
+
+
+/*Input5*/
+.input55{
+    position: relative;
+}
+.form-control.input5{
+    transition: .2s;
+}
+.input5:focus{
+    box-shadow: none !important;
+}
+.input5{
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+}
+.input5 ~ .focus-border{ 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px !important;
+    transition: .4s;
+    z-index: 99;
+}
+.input5 ~ .focus-border:before,
+.input5 ~ .focus-border:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #3399FF;
+    transition: 0.4s;
+}
+.input5 ~ .focus-border:after{
+    left: auto;
+    right: 0;
+}
+.input5:focus ~ .focus-border:before,
+.input5:focus ~ .focus-border:after{
+    width: 50%;
+    transition: .4s;
+}
+
+
+/*Input6*/
+.input6{
+    border-radius: 0;
+    border: 2px solid transparent;
+    border-bottom-color: #cccccc;
+    transition: 0.5s;
+    padding-left: 5px;
+}
+.input6:focus{
+    box-shadow: none !important;
+    border: 2px solid #3399FF !important;
+    padding-left: 15px;
+}
+
+
+/*Input7*/
+.input77{
+    position: relative;
+}
+.input7{
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    padding: 5px 0 7px;
+    border: 1px solid transparent !important;
+    border-bottom-color: #ccc !important;
+    transition: 0.5s;
+}
+.input7:focus{
+    box-shadow: none !important;
+    padding: 5px 15px 7px;
+    transition: 0.5s;
+}
+.input7 ~ .focus-border{
+    position: absolute;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.5s;
+    z-index: -1;
+}
+.input7:focus ~ .focus-border{
+    transform: 0.5s;
+    height: 100%;
+    border: 2px solid #3399FF;
+    z-index: 1;
+}
+
+
+/*Input8*/
+.input88{
+    position: relative;
+}
+.input8{
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    padding: 5px 0 7px;
+    border: 1px solid transparent !important;
+    border-bottom-color: #ccc !important;
+    transition: 0.5s;
+}
+.input8:focus{
+    box-shadow: none !important;
+    padding: 5px 15px 7px;
+    transition: 0.5s;
+}
+.input8 ~ .focus-border{
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    transition: 0.5s;
+}
+.input8:focus ~ .focus-border{
+    width: 100%;
+    transform: 0.5s;
+    border: 2px solid #3399FF;
+}
+
+
+/*Input9*/
+.input99{
+    position: relative;
+}
+.input9{
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    padding: 5px 0 7px;
+    border: 1px solid transparent !important;
+    border-bottom-color: #ccc !important;
+    transition: 0.5s;
+}
+.input9:focus{
+    box-shadow: none !important;
+    padding: 5px 15px 7px;
+    transition: 0.5s;
+}
+.input9 ~ .focus-border{
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    transition: 0.5s;
+}
+.input9:focus ~ .focus-border{
+    width: 100%;
+    transform: 0.5s;
+    border: 2px solid #3399FF;
+}
+
+
+/*Input10*/
+.input100{
+    position: relative;
+}
+.input10{
+    border: 1.5px solid #ccc;
+    border-radius: 0;
+    transition: .4s;
+}
+.input10:focus{
+    box-shadow: none !important;
+}
+.input10 ~ .focus-border::before,
+.input10 ~ .focus-border::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #3399FF;
+    transition: 0.4s;
+}
+.input10 ~ .focus-border:after{
+    top: auto;
+    bottom: 0;
+}
+.input10 ~ .focus-border i::before,
+.input10 ~ .focus-border i::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 2px;
+    height: 0;
+    background-color: #3399FF;
+    transition: 0.6s;
+}
+.input10 ~ .focus-border i:after{
+    left: auto;
+    right: 0;
+}
+.input10:focus ~ .focus-border::before,
+.input10:focus ~ .focus-border::after{
+    left: 0;
+    width: 100%;
+    transition: 0.4s;
+}
+.input10:focus ~ .focus-border i::before,
+.input10:focus ~ .focus-border i::after{
+    top: 0;
+    height: 100%;
+    transition: 0.6s;
+}
+
+
+
+/*Input11*/
+.input110{
+    position: relative;
+}
+.input11{
+    border: 1.5px solid #ccc;
+    border-radius: 0;
+    transition: .4s;
+}
+.input11:focus{
+    box-shadow: none !important;
+}
+.input11 ~ .focus-border::before,
+.input11 ~ .focus-border::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #3399FF;
+    transition: 0.3s;
+}
+.input11 ~ .focus-border:after{
+    top: auto;
+    bottom: 0;
+    left: auto;
+    right: 0;
+}
+.input11 ~ .focus-border i::before,
+.input11 ~ .focus-border i::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 0;
+    background-color: #3399FF;
+    transition: 0.4s;
+}
+.input11 ~ .focus-border i:after{
+    left: auto;
+    right: 0;
+    top: auto;
+    bottom: 0;
+}
+.input11:focus ~ .focus-border::before,
+.input11:focus ~ .focus-border::after{
+    width: 100%;
+    /* transition: 0.3s; */
+    transition: 0.6s;
+}
+.input11:focus ~ .focus-border i::before,
+.input11:focus ~ .focus-border i::after{
+    height: 100%;
+    /* transition: 0.4s; */
+    transition: 0.5s;
+}
+
+
+
+/*Input12*/
+.input120{
+    position: relative;
+}
+.input12{
+    border: 1.5px solid #ccc;
+    border-radius: 0;
+    transition: .4s;
+}
+.input12:focus{
+    box-shadow: none !important;
+}
+.input12 ~ .focus-border::before,
+.input12 ~ .focus-border::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #3399FF;
+    transition: 0.2s;
+    transition-delay: 0.2s;
+}
+.input12 ~ .focus-border:after{
+    top: auto;
+    bottom: 0;
+    right: auto;
+    left: 0;
+    transition-delay: 0.6s;
+}
+.input12 ~ .focus-border i::before,
+.input12 ~ .focus-border i::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 0;
+    background-color: #3399FF;
+    transition: 0.2s;
+}
+.input12 ~ .focus-border i:after{
+    left: auto;
+    right: 0;
+    top: auto;
+    bottom: 0;
+    transition-delay: 0.4s;
+}
+.input12:focus ~ .focus-border::before,
+.input12:focus ~ .focus-border::after{
+    width: 100%;
+    /* transition: 0.3s; */
+    transition: 0.2s;
+    transition-delay: 0.6s;
+}
+.input12:focus ~ .focus-border::after{
+    transition-delay: 0.2s;
+}
+.input12:focus ~ .focus-border i::before,
+.input12:focus ~ .focus-border i::after{
+    height: 100%;
+    transition: 0.2s;
+}
+.input12:focus ~ .focus-border i::after{
+    transition-delay: 0.4s;
+}
